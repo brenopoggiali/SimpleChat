@@ -24,9 +24,11 @@ int main(int argc, char const *argv[]) {
               novo_socket << data;
             }
           }
+          //Caso tenha encontrado uma exceção
           catch (socketException&){}
       }
   }
+  //Imprindo qual foi essa exceção
   catch ( serverException& e ){
     cout << "Foi encontrado uma exceção: " << e.descricao() << "\nSaindo. \n";
   }

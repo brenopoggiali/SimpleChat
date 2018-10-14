@@ -9,8 +9,8 @@ class serverSocket : private Socket{
     serverSocket(){};
     virtual ~serverSocket;
 
-    const serverSocket& operador << (const string&) const;
-    const serverSocket& operador >> (string&) const;
+    const serverSocket& operator << (const string&) const;
+    const serverSocket& operator >> (string&) const;
 
     void aceitar(serverSocket&);
 };
